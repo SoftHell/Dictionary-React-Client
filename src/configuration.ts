@@ -1,0 +1,1 @@
+export const ApiBaseUrl = "https://wordy.azurewebsites.net/api";
