@@ -34,7 +34,9 @@ const Header = (): JSX.Element => {
                             </svg>
                         </NavLink>
                         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <NavLink className="nav-link nav-dropdown-link text-dark" to="/word"> DICTIONARY </NavLink>
+                        
+                            <NavLink className="nav-link nav-dropdown-link text-dark" to={"/word/index/" + "En"}> ENG – EST </NavLink>
+                            <NavLink className="nav-link nav-dropdown-link text-dark" to={"/word/index/" + "Et"}> EST – ENG </NavLink>
                             {/* <NavLink className="nav-link nav-dropdown-link text-dark" to="/Word?lang=Et">EST – ENG</NavLink> */}
                         </div>
                     </li>

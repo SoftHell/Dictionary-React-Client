@@ -32,11 +32,11 @@ function App() {
                         <Route path="/identity/login" component={Login} />
                         <Route path="/identity/register" component={Register} />
                         <Route path="/form" component={PageForm} />
+                        <Route path="/word/index/:lang" component={WordIndex} />
                         <Route path="/word/create" component={WordCreate} />
                         <Route path="/word/edit/:id" component={WordEdit} />
                         <Route path="/word/delete/:id" component={WordDelete} />
                         <Route path="/word/:id" component={WordDetails} />
-                        <Route path="/word" component={WordIndex} />
                         <Route component={Page404} />
                     </Switch>
                     </main>

@@ -1,1 +1,1 @@
-export const ApiBaseUrl = "https://wordy.azurewebsites.net/api";
+export const ApiBaseUrl = "https://localhost:5001/api";

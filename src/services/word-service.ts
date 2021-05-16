@@ -21,7 +21,7 @@ export abstract class WordService {
         return config;      
     }
 
-    static async getAll<TEntity>(apiEndpoint: string, jwt?: string): Promise<IFetchResponse<TEntity[]>> {
+    static async getAllByLanguage<TEntity>(apiEndpoint: string, jwt?: string): Promise<IFetchResponse<TEntity[]>> {
         try {
             let response = await this.axios.get<TEntity[]>(apiEndpoint, WordService.getAxiosConfiguration(jwt));
             return {
