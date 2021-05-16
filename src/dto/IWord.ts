@@ -1,5 +1,5 @@
 export interface IWord {
-    id: string;
+    id?: string;
     value: string;
     languageId: string;
     queryWordId?: string;
@@ -7,4 +7,6 @@ export interface IWord {
     partOfSpeechId?: string;
     equivalents?: string[];
     equivalentString?: string;
+    example?: string;
+    explanation?: string;
 }

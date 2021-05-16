@@ -8,11 +8,12 @@ import Header from './components/Header';
 import HomeIndex from './containers/home/HomeIndex';
 import Login from './containers/identity/Login';
 import Register from './containers/identity/Register';
-import WordCreate from './containers/words/WordCreate';
+/* import WordCreate from './containers/words/WordCreate'; */
 import WordEdit from './containers/words/WordEdit';
 import WordDelete from './containers/words/WordDelete';
 import WordDetails from './containers/words/WordDetails';
 import WordIndex from './containers/words/WordIndex';
+import WordForm from './containers/words/WordForm';
 
 function App() {
     const setAuthInfo = (jwt: string | null, email: string): void => {
@@ -33,7 +34,8 @@ function App() {
                         <Route path="/identity/register" component={Register} />
                         <Route path="/form" component={PageForm} />
                         <Route path="/word/index/:lang" component={WordIndex} />
-                        <Route path="/word/create" component={WordCreate} />
+                        {/* <Route path="/word/create" component={WordCreate} /> */}
+                        <Route path="/word/create" component={WordForm} />
                         <Route path="/word/edit/:id" component={WordEdit} />
                         <Route path="/word/delete/:id" component={WordDelete} />
                         <Route path="/word/:id" component={WordDetails} />
