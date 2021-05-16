@@ -18,10 +18,11 @@ const Login = () => {
         setAlertMessage('');
         let response = await IdentityService.Login('account/login', loginData);
         if (!response.ok) {
+            console.log(response)
             setAlertMessage(response.messages![0]);
         } else {
             setAlertMessage('');
-            appState.setAuthInfo(response.data!.jwt, response.data!.firstname, response.data!.lastname);
+            appState.setAuthInfo(response.data!.jwt, response.data!.email);
         }
     }
 

@@ -58,10 +58,10 @@ const Header = (): JSX.Element => {
                         :
                         <>
                             <li className="nav-item">
-                                <span className="nav-link text-dark">{appState.firstName + ' ' + appState.lastName}</span>
+                                <span className="nav-link text-dark">{appState.email}</span>
                             </li>
                             <li className="nav-item">
-                                <button onClick={() => appState.setAuthInfo(null, '','')} className="btn btn-link nav-link text-light" >Logout</button>
+                                <button onClick={() => appState.setAuthInfo(null, '')} className="btn btn-link nav-link text-light" >Logout</button>
                             </li>
                         </>
                     }

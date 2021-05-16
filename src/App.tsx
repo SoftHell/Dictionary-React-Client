@@ -15,8 +15,8 @@ import WordDetails from './containers/words/WordDetails';
 import WordIndex from './containers/words/WordIndex';
 
 function App() {
-    const setAuthInfo = (jwt: string | null, firstName: string, lastName: string): void => {
-        setAppState({...appState, jwt, firstName, lastName});
+    const setAuthInfo = (jwt: string | null, email: string): void => {
+        setAppState({...appState, jwt, email});
     }
 
     const [appState, setAppState] = useState({...initialAppState, setAuthInfo });
