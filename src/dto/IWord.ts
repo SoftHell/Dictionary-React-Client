@@ -5,4 +5,6 @@ export interface IWord {
     queryWordId?: string;
     topicId?: string;
     partOfSpeechId?: string;
+    equivalents?: string[];
+    equivalentString?: string;
 }

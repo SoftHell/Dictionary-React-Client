@@ -49,6 +49,7 @@
   "devDependencies": {
     "@types/bootstrap": "^5.0.13",
     "@types/jquery": "^3.5.5",
-    "@types/react-router-dom": "^5.1.7"
+    "@types/react-router-dom": "^5.1.7",
+    "file-loader": "^6.2.0"
   }
 }

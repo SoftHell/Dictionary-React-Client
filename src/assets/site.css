@@ -1,450 +1,583 @@
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  /*background-color: #f2f2f2;*/
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+.control-label {
+  font-weight: bold;
+}
+
+.logo {
+  width: 460px;
+  height: 400px;
+}
+
+.logo-text {
+  font-family: "Segoe Script", sans-serif;
+  font-weight: bold;
+  color: whitesmoke;
+  padding: 80px;
+}
+
+
+.menu-bar {
+  font-size: large;
+  background: #17a2b8;
+  color: mintcream;
+}
+
+.text-light {
+  color: white;
+  font-size: x-large;
+}
+.text-light, .text-dark {
+  text-transform: capitalize;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.add-button, .icon-button {
+  color: #33373b;
+  opacity: 0.9;
+}
+
+.add-button, .close-button, .edit-button {
+  float: right;
+}
+
+
+li, dt, dd, .info-box, .dropdown-menu, .padded {
+  padding: 15px;
+}
+
+dt, dd {
+  border: 1px lightgray;
+}
+
+h1, .nav-item, .nav-link {
+  text-transform: none;
+}
+
+.info-box {
+  border-radius: 0.5rem;
+}
+
+.content-container {
+  background: rgba(227, 227, 227, 0.9);
+}
+
+
+.align-center-custom {
+  align-items: center;
+  align-content: center;
+}
+
+.padded-lg {
+  padding: 40px;
+}
+
+.hobby-group-logo {
+  height: 150px;
+  width: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.home-heading {
+  color: #0c5460;
+  font-family: "Century Gothic", sans-serif;
+
+}
+
+.nav-dropdown-link {
+  font-size: 15px;
+
+}
+
+.detail-heading {
+  text-align: center;
+}
+
+.index-heading {
+  text-align: center;
+  font-style: normal;
+  color: #343a40;
+  justify-content: center;
+  font-size: large;
+}
+
+.main-heading {
+  letter-spacing: 15px;
+}
+
+.form-box {
+  padding: 40px;
+  background-color: #f2f2f2;
+  border-radius: 0.8rem;
+}
+.heading-container {
+  position: relative;
+  text-align: center;
+}
+
+.company-logo-heading {
+  position: relative;
+  top: 20px;
+  font-size: 100px;
   
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
-  }
-  
-  /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-  for details on configuring this project to bundle and minify static web assets. */
-  
-  a.navbar-brand {
-    white-space: normal;
-    text-align: center;
-    word-break: break-all;
-  }
-  
-  /* Provide sufficient contrast against white background */
-  a {
-    color: #0366d6;
-  }
-  
-  .btn-primary {
-    color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
-  }
-  
-  .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-    color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
-  }
-  
-  /* Sticky footer styles
-  -------------------------------------------------- */
-  
-  .border-top {
-    border-top: 1px solid #e5e5e5;
-  }
-  .border-bottom {
-    border-bottom: 1px solid #e5e5e5;
-  }
-  
-  .box-shadow {
-    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-  }
-  
-  button.accept-policy {
-    font-size: 1rem;
-    line-height: inherit;
-  }
-  
-  /* Sticky footer styles
-  -------------------------------------------------- */
-  html {
-    position: relative;
-    min-height: 100%;
-  }
-  
-  body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
-    /*background-color: #bcc5c6;*/
-    /*background-color: #839ba0;  Dark Teal */
-    background-color: #f8f9fa;
-  }
-  
-  .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    white-space: nowrap;
-    line-height: 60px; /* Vertically center the text there */
-  }
-  
-  .control-label {
-    font-weight: bold;
-  }
-  
-  .logo {
-    width: 460px;
-    height: 400px;
-  }
-  
+}
+
+.subheading {
+  color: #8d8d8d;
+  font-style: italic;
+}
+
+.font-size-lg {
+  font-size: large;
+}
+
+.highlighted-heading {
+  color: #117a8b;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.search-bar {
+  background-color: #17a2b8;
+  padding: 10px;
+  border-radius: 10rem;
+  box-shadow: 5px 5px 10px #9b9b9b;
+}
+
+.search-button {
+  all: unset;
+  border-bottom-right-radius: 20rem;
+  border-top-right-radius: 20rem;
+  padding: 20px;
+  background-color: white;
+  /*background-color: #ff5f13;*/
+  box-shadow: none;
+}
+.exact-match-check {
+  all: unset;
+  background-color: white;
+  padding: 20px;
+}
+
+.search-input {
+  all: unset;
+  padding: 10px;
+  background-color: white;
+  border-radius: 20rem;
+}
+
+.search-bar-lang-input {
+  all: unset;
+  padding: 10px;
+  background-color: white;
+  height: 44px;
+}
+.search-bar-lang-input:hover {
+  opacity: 0.8;
+}
+
+.home-subheading {
+  text-shadow: 1px 1px 5px #838383;
+}
+
+.pad-left-lg {
+  padding-left: 170px;
+}
+.pad-left-md {
+  padding-left: 20px;
+}
+.pad-top-sm {
+  padding-top: 2px;
+}
+
+.check-size {
+  height: 20px;
+  width: 20px;
+}
+.shaded {
+  box-shadow: 2px 2px 5px #838383;;
+}
+
+input[type='radio']:after {
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  top: 0;
+  left: 0;
+  position: relative;
+  background-color: #d1d3d1;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: none;
+}
+
+input[type='radio']:checked:after {
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  top: 0;
+  left: 0;
+  position: relative;
+  background-color: darkorange;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: none;
+}
+
+.match-choices {
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+
+/*====================== ICON BUTTONS =======================*/
+
+.icon-add {
+  width: 20px;
+  height: 20px;
+  background-size: 30px 30px;
+}
+
+.icon {
+  opacity: 0.8;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-lg {
+  width: 30px;
+  height: 30px;
+}
+
+.icon-right {
+  float: right;
+}
+
+.icon-plus {
+  color: #39852b;
+}
+
+
+/*==========================================================*/
+/*============== SIZE RESPONSIVE ELEMENTS ==================*/
+/*==========================================================*/
+
+
+/*============== XXS ==================*/
+
+@media (min-width: 16px) {
   .logo-text {
-    font-family: "Segoe Script", sans-serif;
-    font-weight: bold;
-    color: whitesmoke;
-    padding: 80px;
+    font-size: 20px;
   }
-  
-  
-  .menu-bar {
-    font-size: large;
-    background: #17a2b8;
-    color: mintcream;
+
+  tbody, thead, a, dt, dd, .btn, .form-group, .form-control {
+    font-size: 8px;
   }
-  
-  .text-light {
-    color: white;
-    font-size: x-large;
+  header {
+    font-size: 10px;
   }
-  .text-light, .text-dark {
-    text-transform: capitalize;
-    padding-left: 20px;
-    padding-right: 20px;
+  .company-logo-heading {
+    font-size: 20px;
   }
-  
-  
-  .add-button, .icon-button {
-    color: #33373b;
-    opacity: 0.9;
+  h1 {
+    font-size: 15px;
   }
-  
-  .add-button, .close-button, .edit-button {
-    float: right;
+  h2, .nav-link, .nav-item {
+    font-size: 13px;
   }
-  
-  
-  li, dt, dd, .info-box, .dropdown-menu, .padded {
-    padding: 15px;
+  h3 {
+    font-size: 11px;
   }
-  
-  dt, dd {
-    border: 1px lightgray;
+  h4 {
+    font-size: 10px;
   }
-  
-  h1, .nav-item, .nav-link {
-    text-transform: none;
+
+  .btn {
+    height: 25px;
+    width: 90px;
+  }
+
+  .info-box {
+    column-width: max-content;
+  }
+
+  .nav-dropdown-link {
+    font-size: 12px;
+
+  }
+  .heading-container {
+    display: none;
+  }
+
+}
+
+/*============== XS ==================*/
+
+@media (min-width: 200px) {
+  .logo-text {
+    font-size: 40px;
+  }
+  .add-button {
+    font-size: 25px;
+  }
+  tbody, thead, a, dt, dd, .btn, .form-group, .form-control {
+    font-size: 14px;
+  }
+  header {
+    font-size: 16px;
+  }
+  .company-logo-heading {
+    font-size: 30px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2, .nav-link, .nav-item {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+
+  .btn {
+    height: 35px;
+    width: 100px;
+  }
+  .nav-link, .nav-item {
+    font-size: 15px;
+    padding: 5px;
   }
   
   .info-box {
-    border-radius: 0.5rem;
+    column-width: max-content;
   }
-  
-  .content-container {
-    background: rgba(200,200,180,0.9);
-  }
-  
-  
-  .align-center-custom {
-    align-items: center;
-    align-content: center;
-  }
-  
-  .padded-lg {
-    padding: 40px;
-  }
-  
-  .hobby-group-logo {
-    height: 150px;
-    width: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  
-  .home-heading {
-    color: #0c5460;
-    font-family: "Century Gothic", sans-serif;
-    
-  }
-  
   .nav-dropdown-link {
-    font-size: 15px;
-  
+    font-size: 12px;
+
+  }
+  .heading-container {
+    display: none;
   }
   
-  .detail-heading {
-    text-align: center;
-  }
-  
-  .index-heading {
-    text-align: center;
-    font-style: normal;
-    color: #343a40;
-    justify-content: center;
-    font-size: xx-large;
+}
+
+/*============== S ==================*/
+
+@media (min-width: 768px) {
+
+  .logo-text {
+    font-size: 60px;
   }
 
-  .home-container {
-    border-radius: 0.8rem;
-    background-color: #fdfdfd;
-    box-shadow: 10px 10px 70px rgb(189, 189, 189);
+  tbody, thead, a, dt, dd, .btn, .form-group, .form-control {
+    font-size: 16px;
+  }
+  header {
+    font-size: 18px;
+  }
+  .company-logo-heading {
+    font-size: 50px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  h2, .nav-link, .nav-item {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+
+  .btn {
+    height: 40px;
+    width: 110px;
+  }
+  .nav-link, .nav-item {
+    font-size: 18px;
+    padding: 6px;
   }
   
-  /*====================== ICON BUTTONS =======================*/
-  
-  .icon-add {
-    width: 20px;
-    height: 20px;
-    background-size: 30px 30px;
+  .logo {
+    width: 310px;
+    height: 280px;
+  }
+  .heading-container {
+    display: none;
+  }
+}
+
+/*============== M ==================*/
+
+@media (min-width: 992px) {
+
+  .logo-text {
+    font-size: 80px;
+  }
+  tbody, thead, a, dt, dd, .btn, .form-group, .form-control {
+    font-size: 18px;
+  }
+  header {
+    font-size: 20px;
+  }
+  .company-logo-heading {
+    font-size: 75px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+
+  .btn {
+    height: 45px;
+    width: 130px;
+  }
+  .nav-link, .nav-item {
+    font-size: 20px;
+    padding: 7px;
   }
   
-  .icon {
-    opacity: 0.8;
-    width: 20px;
-    height: 20px;
+  .logo {
+    width: 360px;
+    height: 330px;
   }
-  
-  .icon-lg {
-    width: 30px;
-    height: 30px;
+  .heading-container {
+    display: contents;
   }
-  
-  .icon-right {
-    float: right;
+}
+
+/*============== L ==================*/
+
+@media (min-width: 1200px) {
+
+  .logo-text {
+    font-size: 100px;
   }
-  
-  /*==========================================================*/
-  /*============== SIZE RESPONSIVE ELEMENTS ==================*/
-  /*==========================================================*/
-  
-  
-  /*============== XXS ==================*/
-  
-  @media (min-width: 16px) {
-    .logo-text {
-      font-size: 20px;
-    }
-    
-    tbody, thead, a, dt, dd, .btn, .form-group, .form-control {
-      font-size: 8px;
-    }
-    header {
-      font-size: 10px;
-    }
-    h1 {
-      font-size: 15px;
-    }
-    h2, .nav-link, .nav-item {
-      font-size: 13px;
-    }
-    h3 {
-      font-size: 11px;
-    }
-    h4 {
-      font-size: 10px;
-    }
-  
-    .btn {
-      height: 25px;
-      width: 90px;
-    }
-  
-    .logo-div {
-      display:none;
-    }
-    
-    .info-box {
-      column-width: max-content;
-    }
-  
-    .nav-dropdown-link {
-      font-size: 12px;
-  
-    }
-    
+
+  tbody, thead, a, dt, dd, .btn, .form-group, .form-control, .user-dropdown-item {
+    font-size: 20px;
   }
-  
-  /*============== XS ==================*/
-  
-  @media (min-width: 200px) {
-    .logo-text {
-      font-size: 40px;
-    }
-    .add-button {
-      font-size: 25px;
-    }
-    tbody, thead, a, dt, dd, .btn, .form-group, .form-control {
-      font-size: 14px;
-    }
-    header {
-      font-size: 16px;
-    }
-    h1 {
-      font-size: 20px;
-    }
-    h2, .nav-link, .nav-item {
-      font-size: 18px;
-    }
-    h3 {
-      font-size: 16px;
-    }
-    h4 {
-      font-size: 14px;
-    }
-    
-    .btn {
-      height: 35px;
-      width: 100px;
-    }
-    .nav-link, .nav-item {
-      font-size: 15px;
-      padding: 5px;
-    }
-    .logo-div {
-      display:none;
-    }
-    .info-box {
-      column-width: max-content;
-    }
-    .nav-dropdown-link {
-      font-size: 12px;
-  
-    }
+  header {
+    font-size: 22px;
   }
-  
-  /*============== S ==================*/
-  
-  @media (min-width: 768px) {
-    
-    .logo-text {
-      font-size: 60px;
-    }
-    
-    tbody, thead, a, dt, dd, .btn, .form-group, .form-control {
-      font-size: 16px;
-    }
-    header {
-      font-size: 18px;
-    }
-    h1 {
-      font-size: 22px;
-    }
-    h2, .nav-link, .nav-item {
-      font-size: 20px;
-    }
-    h3 {
-      font-size: 18px;
-    }
-    h4 {
-      font-size: 16px;
-    }
-    
-    .btn {
-      height: 40px;
-      width: 110px;
-    }
-    .nav-link, .nav-item {
-      font-size: 18px;
-      padding: 6px;
-    }
-    .logo-div {
-      display: contents;
-    }
-    .logo {
-      width: 310px;
-      height: 280px;
-    }
+  .company-logo-heading {
+    font-size: 100px;
   }
-  
-  /*============== M ==================*/
-  
-  @media (min-width: 992px) {
-    
-    .logo-text {
-      font-size: 80px;
-    }
-    tbody, thead, a, dt, dd, .btn, .form-group, .form-control {
-      font-size: 18px;
-    }
-    header {
-      font-size: 20px;
-    }
-    h1 {
-      font-size: 30px;
-    }
-    h2 {
-      font-size: 25px;
-    }
-    h3 {
-      font-size: 20px;
-    }
-    h4 {
-      font-size: 20px;
-    }
-    
-    .btn {
-      height: 45px;
-      width: 130px;
-    }
-    .nav-link, .nav-item {
-      font-size: 20px;
-      padding: 7px;
-    }
-    
-    .logo-div {
-      display: contents;
-    }
-    .logo {
-      width: 360px;
-      height: 330px;
-    }
+  h1 {
+    font-size: 40px;
   }
-  
-  /*============== L ==================*/
-  
-  @media (min-width: 1200px) {
-    
-    .logo-text {
-      font-size: 100px;
-    }
-    
-    tbody, thead, a, dt, dd, .btn, .form-group, .form-control, .user-dropdown-item {
-      font-size: 20px;
-    }
-    header {
-      font-size: 22px;
-    }
-    h1 {
-      font-size: 40px;
-    }
-    h2 {
-      font-size: 30px;
-    }
-    h3 {
-      font-size: 26px;
-    }
-    h4 {
-      font-size: 20px;
-    }
-    .btn {
-      height: 50px;
-      width: 140px;
-    }
-    .nav-link, .nav-item {
-      font-size: 22px;
-    }
-  
-    .logo-div {
-      display: contents;
-    }
-    .logo {
-      width: 470px;
-      height: 430px;
-    }
-  
-    .nav-dropdown-link {
-      font-size: 16px;
-    }
+  h2 {
+    font-size: 30px;
   }
-    
+  h3 {
+    font-size: 26px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  .btn {
+    height: 50px;
+    width: 140px;
+  }
+  .nav-link, .nav-item {
+    font-size: 22px;
+  }
+
+  .logo {
+    width: 470px;
+    height: 430px;
+  }
+
+  .nav-dropdown-link {
+    font-size: 16px;
+  }
+  .heading-container {
+    display: contents;
+  }
+}
